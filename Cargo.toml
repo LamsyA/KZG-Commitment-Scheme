@@ -6,3 +6,7 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+oblast-demo = "0.1.0"
+num-bigint = "0.3.1"
+rand = "0.8.3"
+hex = "0.4.2"

@@ -8,7 +8,7 @@ pub use std::fmt;
 /// 4. Implement a method to create a polynomial from a list of coefficients.
 
 #[derive(Debug)]
-struct Polynomial {
+pub struct Polynomial {
     pub coefficients: Vec<Fr>,
 }
 
@@ -35,7 +35,7 @@ impl Polynomial {
     // evaluate(2) = 2*2ˆ2 + 3*2 + 1 = 15
     // evaluate(2) = 1 + 3*2 + 2*2ˆ2 = 15
     // evaluate(2) = 15
-    fn evaluate(&self, x: Fr) -> Fr {
+    pub fn evaluate(&self, x: Fr) -> Fr {
         let mut sum = self.coefficients[0].clone();
         let mut variable = x.clone();
         for i in 1..self.coefficients.len() {
